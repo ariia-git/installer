@@ -54,7 +54,7 @@ class NewCommand extends Command
             ->addOption('dev', null, InputOption::VALUE_NONE, 'Installs the latest "development" release')
             ->addOption('auth', null, InputOption::VALUE_NONE, 'Installs the Laravel authentication scaffolding')
             ->addOption('force', 'f', InputOption::VALUE_NONE, 'Forces install even if the directory already exists')
-            ->addOption('with', 'w', InputOption::VALUE_NONE, 'Installs Laravel packages');
+            ->addOption('with', 'w', InputOption::VALUE_REQUIRED, 'Installs Laravel packages');
     }
 
     /**
